@@ -23,3 +23,20 @@ function fizzBuzz(num){
 }
 fizzBuzz(15) // expected output is: 1 2 fizz 4 buzz ... 14 fizzbuzz
 console.log(arr);
+// Odds function 
+/* 
+create a loop function that will console.log all the odd values of a given number
+*/
+function odds(num){
+    for(let i = 0; i <= num; i++){
+        if(i % 2 == 1){
+            console.log(i)
+        }
+    }
+}
+odds(20) // expected output is 1 3 5 7 .. 19
+
+//Decreasing Multiples of 3 
+// create a function that will console.log all of the values that are evenly divisible by 3 from 100 to 0
+
+
