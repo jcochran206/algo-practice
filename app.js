@@ -56,5 +56,22 @@ function sequence(num){
 }
 sequence(4);
 
-//
-//use a loop and added  
+
+//use a loop and added 
+let sum = 0;
+function summarized(num){
+    for(let i = 0;  i<num; i++){
+        sum += i;
+    }
+    console.log(sum);
+}
+summarized(101); // 5050
+
+//factorial
+function factorial(num){
+    for(let i = 1; i<num; i++){
+        num *= i; 
+        console.log(num);
+    }
+}
+factorial(13);
