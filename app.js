@@ -38,5 +38,23 @@ odds(20) // expected output is 1 3 5 7 .. 19
 
 //Decreasing Multiples of 3 
 // create a function that will console.log all of the values that are evenly divisible by 3 from 100 to 0
+function multiplesby3(num){
+    for(let i = num; i >- 1; i--){
+        if(i % 3 == 0){
+            console.log(i)
+        }
+    }
+}
+multiplesby3(100);
 
+//print the sequence 
+//Using a loop to write the sequence 4, 2.5, 1, -0.5, -2, -3.5
+function sequence(num){
+    for(let i = num; i >-num; i -=1.5){
+        console.log(i)
+    }
+}
+sequence(4);
 
+//
+//use a loop and added  
