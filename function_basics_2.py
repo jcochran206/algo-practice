@@ -1,7 +1,7 @@
 #Assignment is to create the following functions
 # Countdown - Create a function that accepts a number as an input. 
 # Return a new list that counts down by one, from the number 
-# (as the 0th element) down to 0 (as the last element).
+# (as the 0th element) down to 0 (as the last element)
 def countdown(num):
     for num in range(num, 0, -1):
         print(num)
