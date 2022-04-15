@@ -6,6 +6,7 @@ class BankAccount:
         self.int_rate = int_rate
         self.balance = balance
         
+
     def deposit(self, amount):
         self.balance += amount
         print(f'your deposit of {amount} is complete')
@@ -33,7 +34,7 @@ class BankAccount:
 ## create 2 accounts
 acct1 = BankAccount(0.01,5000)
 acct2 = BankAccount(0.01,6000)
-print('---------create 2 accounts')
+print('----create 2 accounts')
 print(acct1.balance)
 print(acct2.balance)
 #1st account actions

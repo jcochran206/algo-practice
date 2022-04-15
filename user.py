@@ -3,35 +3,37 @@
 # todo withdrawal(self, amount)
 # todo display_user_balance(self)
 # Bonus: transfer_money(self, other_user, amount)
+# updated with BankAccount Class
+from BankAccount import BankAccount
 
 class User:
     def __init__(self, name, email):
         self.name = name
         self.email = email
         # account balance
-        self.account_balance = 0
-
+        self.account = BankAccount(0.02, 0)
+        print(self.account.balance)
     #method to display user balance
     def display_user_balance(self):
-        print(f'{self.name} balance is: {self.account_balance}')
+        print(f'{self.name} balance is: {self.account.balance}')
         return self #needed to chain method
     #method to deposit to account
     def deposit(self, amount):
         #add money to account
-        self.account_balance += amount
+        self.account.balance += amount
         print(f'{self.name} deposited: {amount}')
         return self #need to chain method
     #method to withdraw amount
     def make_withdrawal(self, amount): 
-        self.account_balance -= amount
+        self.account.balance -= amount
         print(f'{self.name} withdrew : {amount}')
         return self #need to chain
     #method to transfer
     def tranfer_money(self, other_user, amount):
-        self.account_balance -= amount
-        other_user.account_balance += amount
+        self.account.balance -= amount
+        other_user.account.balance += amount
         print(f'{self.name} transfered {amount} to {other_user.name}')
-        print(f'{self.name} new balance is: {self.account_balance}')
+        print(f'{self.name} new balance is: {self.account.balance}')
         return self #needed to chain
 
 John = User("John", "john@email.com")
