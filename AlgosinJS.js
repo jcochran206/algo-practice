@@ -5,7 +5,7 @@ function allIntsfrom1to255(num) {
         console.log(i)
     }
 }
-console.log(allIntsfrom1to255(255))
+//console.log(allIntsfrom1to255(255))
 //print sum 0-255
 function allSum() {
     let sum = 0;
@@ -14,4 +14,13 @@ function allSum() {
         console.log('sum is: ', sum)
     }
 }
-allSum()
+//console.log(allSum());
+//print odds 1-255
+function odds() {
+    let num = 1;
+    while (num <= 255){
+        console.log(num)
+        num = num +2;
+    }
+}
+odds()
