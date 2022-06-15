@@ -24,3 +24,40 @@ function odds() {
     }
 }
 odds()
+
+//find and print largest
+//given an array find an print the largest element
+
+
+//array with odds
+//create an array with all the odd integers between 1 thru 255
+
+//iterate and print array
+//iterate thru a given array, printing each value
+
+//Get and Print average
+//analyze an array's values and print the average
+
+
+//Greater than Y
+//given an array and a value Y, count and print the number of array values greater than Y
+
+
+//Min Max Avg
+//given an arr print the max min and average of the array
+
+
+//square the values
+//square each value in a given array, returning that same array with changed values
+
+
+//Zero Out Negative numbers
+//return the given array afger setting any negative values to zero
+
+
+//shift array values
+//given an array move all values forward by one index, dropping the first and leaving a '0' value at the end
+
+
+//swap string for Array negative values
+//Replace any negative array values with 'dojo'  
