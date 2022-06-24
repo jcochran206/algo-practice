@@ -27,6 +27,22 @@ odds()
 
 //find and print largest
 //given an array find an print the largest element
+let arr = [2,6,8,14]
+function printArrMax(arr){
+    //ensure array is not empty
+    if(arr.length == 0){
+        console.log('empty array')
+    }
+    //asgn max and loop thru array
+    let max = arr[0];
+    for(let i = 1; i < arr.length; i++){
+        if(arr[i] > max){
+            max = arr[i]
+        }
+        console.log('Max value is: ', max);
+    }
+}
+console.log(printArrMax(arr));
 
 
 //array with odds
