@@ -47,6 +47,14 @@ console.log(printArrMax(arr));
 
 //array with odds
 //create an array with all the odd integers between 1 thru 255
+function oddArr(){
+    let arrOdds = [];
+    for(let i = 1; i <= 255; i+=2){
+        arrOdds.push(i)
+    }
+    console.log("start of odds array: ", arrOdds)
+}
+oddArr();
 
 //iterate and print array
 //iterate thru a given array, printing each value
