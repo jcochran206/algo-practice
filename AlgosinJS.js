@@ -95,22 +95,3 @@ function greaterThanY(){
     
 }
 greaterThanY()
-
-//Min Max Avg
-//given an arr print the max min and average of the array
-
-
-//square the values
-//square each value in a given array, returning that same array with changed values
-
-
-//Zero Out Negative numbers
-//return the given array afger setting any negative values to zero
-
-
-//shift array values
-//given an array move all values forward by one index, dropping the first and leaving a '0' value at the end
-
-
-//swap string for Array negative values
-//Replace any negative array values with 'dojo'  
