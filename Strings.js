@@ -31,4 +31,5 @@ function backSpaceCompare(S,T){
     console.log(buildString(T));
     return true;
 }
-console.log(backSpaceCompare(S,T), 'expected: true output is az' )
+console.log(backSpaceCompare(S,T), 'expected: true output is az' ); 
+
