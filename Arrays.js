@@ -68,4 +68,3 @@ function getTrappedRainwater(heights){
 }
 console.log(getTrappedRainwater(waterHeights), 'expected 8 total');
 
-/* Given a string, find the length of the lognest substring with repeating characters */

@@ -33,3 +33,24 @@ function backSpaceCompare(S,T){
 }
 console.log(backSpaceCompare(S,T), 'expected: true output is az' ); 
 
+/* Given a string, find the length of the lognest substring with repeating characters */
+function lengthOfLongestSubstring(s) {
+    if(s.length <= 1) return s.length;
+    let longest = 0;
+    for(let left = 0; left < s.length; left++){
+        let seenChar = {}, currentLength =0;
+        for(let right = left; right < s.length; right++){
+            const currentChar = s[right];
+            if(!seenChar[currentChar]){
+                currentLength ++;
+                seenChar[currentChar] = true;
+                longest = Math.max(longest, currentLength);
+            } else {
+                break;
+            }
+        }
+    }
+    return longest;
+};
+s = "abcabcbb";
+console.log(lengthOfLongestSubstring(s), 'expected 3')
