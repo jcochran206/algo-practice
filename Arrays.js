@@ -68,3 +68,15 @@ function getTrappedRainwater(heights){
 }
 console.log(getTrappedRainwater(waterHeights), 'expected 8 total');
 
+//validate subsequence 
+function validateSubsequence(array, sequence){
+    let arrIdx = 0;
+    let seqIdx = 0;
+    while(arrIdx < array.length && seqIdx < sequence.length){
+        if(array[arrIdx] == sequence[seqIdx]){
+            seqIdx += 1; 
+        }
+        arrIdx += 1;
+    }
+    return seqIdx == sequence.length
+}
