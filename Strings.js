@@ -53,4 +53,23 @@ function lengthOfLongestSubstring(s) {
     return longest;
 };
 s = "abcabcbb";
-console.log(lengthOfLongestSubstring(s), 'expected 3')
+console.log(lengthOfLongestSubstring(s), 'expected 3');
+/* 
+Given a string determine if its is a palindrome 
+considering only alphanumeric characters and ignoring case sensitivity
+*/ 
+let x = "A man, a plan, a canal: Panama"
+function IsPalindrome(x){
+    x = x.replace(/[^A-Za-z0-9]/g, "").toLowerCase();
+    let left = 0; right = x.length -1;
+
+    while(left<right){
+        if(x[left] !== x[right]){
+            return false
+        }
+        left++;
+        right--;
+    }
+    return true
+}
+console.log(IsPalindrome(x), ': expecting true')
