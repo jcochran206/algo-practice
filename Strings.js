@@ -72,4 +72,16 @@ function IsPalindrome(x){
     }
     return true
 }
-console.log(IsPalindrome(x), ': expecting true')
+console.log(IsPalindrome(x), ': expecting true');
+
+//other option 
+let z = 'tacocat';
+var isPalindrome = function(z) {
+    z = z.replace(/[^A-Za-z0-9]/g, "").toLowerCase();
+    let reversedString = '';
+    for(let i = z.length - 1; i >= 0;  i--){
+        reversedString += z[i];
+    }
+    return z === reversedString;
+};
+console.log(isPalindrome(z), ': expect true')
