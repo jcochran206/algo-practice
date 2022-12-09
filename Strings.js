@@ -85,3 +85,5 @@ var isPalindrome = function(z) {
     return z === reversedString;
 };
 console.log(isPalindrome(z), ': expect true')
+
+// given a linked list and numbers m and n return it back with only positions m and n in reverse
