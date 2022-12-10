@@ -87,3 +87,51 @@ var isPalindrome = function(z) {
 console.log(isPalindrome(z), ': expect true')
 
 // given a linked list and numbers m and n return it back with only positions m and n in reverse
+class ListNode {
+    constructor(val, next = null) {
+      this.val = val;
+      this.next = next;
+    }
+  }
+  // ---- Generate our linked list ----
+  const linkedList = [5, 4, 3, 2, 1].reduce((acc, val) => new ListNode(val, acc), null);
+  
+  // ---- Generate our linked list ----
+  
+  const printList = (head) => {
+    if(!head) {
+      return;
+    }
+  
+    console.log(head.val);
+    printList(head.next);
+}
+
+m = 2; n = 4;
+const reverseBetween = function(head,m,n){
+    let currentPos = 1, currentNode = head, start = head;
+    while(currentPos < m){
+        start = currentNode;
+        currentNode = currentNode.next;
+        currentPos++;
+    }
+    let newlist = null, tail = currentNode;
+    while(currentPos>=m && currentPos<=n){
+        const next = currentNode.next;
+        currentNode.next = newlist;
+        newlist = currentNode;
+        currentNode = next;
+        currentPos++;
+    }
+    start.next = newlist;
+    tail.next = currentNode;
+
+    if(m>1){
+      return head;  
+    }else{
+        return newlist;
+    }
+}
+printList(linkedList);
+console.log('after reverse');
+printList(reverseBetween(linkedList, 2, 4));
