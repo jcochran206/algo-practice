@@ -135,3 +135,9 @@ const reverseBetween = function(head,m,n){
 printList(linkedList);
 console.log('after reverse');
 printList(reverseBetween(linkedList, 2, 4));
+
+/* given a non-empty string with a non negitive number
+write a function that returns a new string obtained by shifting 
+every letter in the input by k positions in alphabet, where k is key
+*/
+
