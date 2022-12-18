@@ -140,15 +140,14 @@ printList(reverseBetween(linkedList, 2, 4));
 write a function that returns a new string obtained by shifting 
 every letter in the input by k positions in alphabet, where k is key
 */
-function getCipher(){
-let letterArr = [];
-let newKey = key % 26;
-for(let i = 0; i <= string.length; i++){
-    letterArr.append(getNewLetter(letter, newKey))
-}
-return "".join(letterArr);
+function getCipher(string, key){
+    let letterArr = [];
 
-    function getNewLetter(letter, newKey){
-        newletterCode = letter.charCodeAt() + num;
+    for(let i = 0; i < string.length; i++){
+        let charCode = (string.charCodeAt(i) - 97 + key) % 26;
+        letterArr.push(String.fromCharCode(charCode + 97));
     }
+    return letterArr.join('');
+  
 }
+console.log(getCipher('abc', 2), "expected: cde");
