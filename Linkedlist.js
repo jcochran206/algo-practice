@@ -17,8 +17,6 @@ const printList = (head) => {
     printList(head.next);
 }
 
-
-
 function reverseLinkedList(head){
     let prev = null;
     let current = head;
@@ -33,3 +31,10 @@ function reverseLinkedList(head){
 printList(linkedList);
 console.log('reverse after')
 console.log(reverseLinkedList(linkedList));
+
+/* double linkedlist allows  
+Given a doubly linked list, list nodes also have a child property 
+that can point to a separate doubly linked list
+these child lists can also have one or more child dbl linked lists of their 
+own and so on
+*/
